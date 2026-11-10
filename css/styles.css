@@ -1,0 +1,56 @@
+body{
+
+    background-image: url(images/coffee.jpg);
+      background-repeat: no-repeat, repeat;
+       background-size: cover;
+       background-position-y: 30%; 
+       margin: 0;
+  padding: 0;
+       
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+ 
+}
+h1{
+    font-family:  "Brush Script MT", "Lucida Handwriting", "Segoe Script", cursive;
+    color: white;
+    text-align: center;
+    font-size: 100px;
+}
+ul {
+ display: flex;
+ justify-content: space-evenly;
+ list-style-type: none;
+  margin-top: 0;
+  padding: 0;
+  overflow: hidden;
+   background-color: #f4f3f3;
+  width: 100%;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: rgb(7, 7, 7);
+  text-align: center;
+  padding: 17px 16px;
+  text-decoration: none;
+  font-family: "Brush Script MT", "Lucida Handwriting", "Segoe Script", cursive;
+  font-size: 20px;
+  width: 100%;
+
+  
+
+  
+}
+
+ul li a:hover {
+  background-color: #bcb7b7;
+}
