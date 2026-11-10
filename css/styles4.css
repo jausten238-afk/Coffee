@@ -1,36 +1,88 @@
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+ 
+ 
+  position: relative;
+  z-index: 10;
+}
+
+h1 {
+  font-family: "Brush Script MT", "Lucida Handwriting", "Segoe Script", cursive;
+  color: white;
+  text-align: center;
+  font-size: 100px;
+  margin-bottom: 20px; 
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin-top: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  
+
+  background-color: rgba(244, 243, 243, 0.85); 
+}
+
+ul li a {
+  display: block;
+  color: rgb(7, 7, 7);
+  text-align: center;
+  padding: 17px 16px;
+  text-decoration: none;
+  font-family: "Brush Script MT", "Lucida Handwriting", "Segoe Script", cursive;
+  font-size: 20px;
+  width: 100%;
+  
+ 
+  transition: background-color 0.3s ease; 
+}
+
+ul li a:hover {
+  background-color: #bcb7b7;
+}
+
 
 .transition-box {
-    width: 20vw;
-    height: 20vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: 1;
+  width: 20vw;  
+  height: 20vh; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  
 
-    transition: width 2s ease-in-out, height 2s ease-in-out;
+  z-index: 1; 
+  
+  transition: width 2s ease-in-out, height 4s ease-in-out;
 }
 
 .transition-box img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;   
+  height: 100vh;  
+  object-fit: cover;
 }
 
 .transition-box .img-front {
-    opacity: 1;
-    z-index: 2;
-    transition: opacity 1s ease-in-out;
+  transition-duration: 10sec;
+  opacity: 1;
+  z-index: 2;
 }
 
+
 .transition-box:hover {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;  
+  height: 100vh; 
 }
 
 .transition-box:hover .img-front {
-    opacity: 0;
+  opacity: 0;    
 }
